@@ -1,12 +1,12 @@
-import { mergeResolvers } from "merge-graphql-schemas";
+import { mergeResolvers } from 'merge-graphql-schemas';
 
-//!: Resolvers
+// Resolvers
 import operatorResolvers from './operators';
 // import operatorResolvers from './operators';
 
 const resolvers = [
   operatorResolvers,
   // operatorResolvers,
-]
+];
 
 export default mergeResolvers(resolvers);

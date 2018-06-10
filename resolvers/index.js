@@ -1,12 +1,8 @@
-import { mergeResolvers } from 'merge-graphql-schemas';
+import * as path from 'path';
+import { mergeResolvers, fileLoader } from 'merge-graphql-schemas';
 
-// Resolvers
-import operatorResolvers from './operators';
-// import operatorResolvers from './operators';
+const resolversArray = fileLoader(path.join(__dirname, './*'));
 
-const resolvers = [
-  operatorResolvers,
-  // operatorResolvers,
-];
+const resolvers = mergeResolvers(resolversArray);
 
-export default mergeResolvers(resolvers);
+export default resolvers;

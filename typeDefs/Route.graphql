@@ -1,0 +1,8 @@
+type Route {
+  destination: String!
+  destinationlocalized: String!
+  lastupdated: String!
+  operator: Operator!
+  origin: String!
+  originlocalized: String!
+}

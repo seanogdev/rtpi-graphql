@@ -1,0 +1,10 @@
+type Stop {
+  id: Int!
+  displaystopid: String!
+  fullname: String!
+  fullnamelocalized: String!
+  latitude: String!
+  longitude: String!
+  shortname: String!
+  shortnamelocalized: String!
+}

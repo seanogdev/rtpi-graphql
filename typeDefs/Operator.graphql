@@ -1,0 +1,13 @@
+# import Route from '../Route.graphql'
+
+type Operator {
+  id: String!
+  name: String!
+  description: String
+  routes: [Route!]!
+}
+
+type Query {
+  operator(id: String, name: String): Operator
+  operators: [Operator!]!
+}
